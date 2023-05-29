@@ -1,38 +1,83 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: blueviolet;
+}
+
+.home-page {
+  font-size: 24px;
+  font-weight: bold;
   text-align: center;
+  color: #333;
+  margin: 20px;
+  padding: 10px;
+  background-color: #f2f2f2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn-submit {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.user-page{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  color: #020000;
+  margin: 20px;
+  padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-form {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 300px;
+  margin: 0 auto;
+}
+
+.main-form label {
+  font-weight: bold;
+}
+
+.main-form input {
+  padding: 8px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 17px;
+}
+
+.main-form input[type="submit"] {
+  background-color: #4caf50;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.main-form input[type="submit"]:hover {
+  background-color: #45a049;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-form input[type="submit"]:focus {
+  outline: none;
 }
+
+.main-form .firstname,
+.main-form .lastname,
+.main-form .age,
+.main-form .email,
+.main-form .contact,
+.main-form .pwd {
+  margin-bottom: 20px;
+}
+
